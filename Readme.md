@@ -50,3 +50,6 @@ The following is the project directory structure:
 │                   └── web.xml
 └── pom.xml
 ```
+
+* Access the log4j (legacy) http://localhost:8080/legacy/hello
+* Access the log4j2 (modern) http://localhost:8080/modern/hello
