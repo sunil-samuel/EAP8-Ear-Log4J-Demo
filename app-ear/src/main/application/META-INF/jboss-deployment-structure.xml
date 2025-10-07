@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure
+	xmlns="urn:jboss:deployment-structure:1.3">
+	<!-- Apply per sub-deployment to ensure each WAR uses its own bundled logging 
+		libs -->
+	<sub-deployment
+		name="com.sunilsamuel.eap8-legacy-log4j-war-1.0.0-SNAPSHOT.war">
+		<exclusions>
+			<module name="org.apache.logging.log4j.api" />
+			<module name="org.jboss.logging" />
+			<module name="org.jboss.logmanager" />
+		</exclusions>
+	</sub-deployment>
+	<sub-deployment
+		name="com.sunilsamuel.eap8-modern-log4j2-war-1.0.0-SNAPSHOT.war">
+		<exclusions>
+			<module name="org.apache.logging.log4j.api" />
+			<module name="org.jboss.logging" />
+			<module name="org.jboss.logmanager" />
+		</exclusions>
+	</sub-deployment>
+</jboss-deployment-structure>

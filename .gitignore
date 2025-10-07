@@ -1,0 +1,55 @@
+# Maven build output
+# This is the most important folder to ignore for any Maven project.
+**/target/
+
+# Log files
+*.log
+**logs/
+
+### IDEs ###
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+### JBoss EAP / WildFly ###
+# Ignore server deployment artifacts and history if you run a local server instance
+# from within the project directory (not common, but good practice to include).
+deployments/
+standalone/
+.wildfly-console-history
+
+# Miscellaneous Files #
+# Package files
+*.zip
+*.ear
+*.war
+*.rar
+
+# Maven Wrapper
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Operating System Files
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
